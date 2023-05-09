@@ -13,8 +13,8 @@ async function run() {
     includedReposPath = core.getInput("includedReposPath");
     const action = core.getInput("action");
     const baseUrl = core.getInput("ghBaseUrl");
-    const canDeleteProtection = action == 'set' || action == 'delete'
-    const canSetProtection = action == 'set' || action == 'add'
+    const canDeleteProtection = action == 'set' || action == 'delete';
+    const canSetProtection = action == 'set' || action == 'add';
 
     var rulesObj;
     var branches;
